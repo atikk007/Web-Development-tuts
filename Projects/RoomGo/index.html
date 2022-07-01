@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Room-Rental</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"></a></h1>
+      <a href="index.html" class="logo"><img src="assets/img/rr-logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Properties</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="sign-in.html">Login</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <!-- <h3>Welcome to Home</h3> -->
+
+      <!-- typewriter effect -->
+      <div class="typewriter-container">
+        <p class="lg:text-4xl  1xs:text-lg xs:text-xl sm:text-2xl tb:text-3xl">Your property search just got
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </p>
+      </div> <!-- End typewriter effect -->
+
+      <div class="search-container">
+        <div class="row g-4">
+          <div class="col-4 col-sm-6">
+            <input type="text" class="form-control" id="inputCity" placeholder="Search...">
+          </div>
+          <div class=" col-4 col-sm-4">
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>Rent</option>
+              <option>Buy</option>
+            </select>
+          </div>
+          <!-- <div class="col-2"> -->
+          <button class="btn btn-primary col-2 col-sm-2 search-btn">Search</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- End Advanced Search-Bar -->
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- <hr class="container"> horizontal divider -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <!-- <h2>Services</h2> -->
+          <h3>Why use <span>Room-Rental ?</span></h3>
+          <p>Here are the things you’re really looking for in your next property !</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-map"></i></div>
+              <h4 class="title"><a href="">Find your room</a></h4>
+              <p class="description">We manually check every room ad on Room-Rental to keep you safe. Find your perfect
+                room,
+                discover who lives there and arrange a viewing.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-bullseye"></i></div>
+              <h4 class="title"><a href="">Safety</a></h4>
+              <p class="description">Your safety is our top priority. We have a team of moderators working 7 days a
+                week
+                to check ads and content.</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">We're all about people</a></h4>
+              <p class="description">Everyone's idea of the perfect house is different, so search based on what's
+                important to you.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <hr class="container"> <!-- horizontal divider -->
+
+    <!-- feature-section was here ;c -->
+
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class=" col-md-6 col-12">
+          <h2 class="m-3 features-heading">Need a room?</h2>
+          <p class="offset-3 w-50 features-para ">Browse through listed properties and select a room of your choice.
+          </p>
+
+          <!-- BAD PRACTICE!!! 
+            <button class=" btn btn-outline-dark m-3"><a href="#" class="features-btn">Browse
+              Properties</a></button> -->
+
+          <a href="" class="btn btn-outline-dark m-3">Browse Properties</a>
+        </div>
+        <div class=" col-md-6 col-12">
+          <h2 class="text-center m-3 features-heading">Got a room to let?</h2>
+          <p class="offset-3  w-50 features-para">Post a free ad and rent your room in days.
+            Find out more.
+          </p>
+
+          <a href="./advertise.html" class="btn btn-outline-dark m-3 offset-3">Advertise for free</a>
+        </div>
+      </div>
+    </div>
+    <hr class="container"> <!-- horizontal divider -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p>Want to list your property ? <br> Register Now !
+          </p>
+          <a class="cta-btn" href="./sign-in.html">Sign-up / Login</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section =======  -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Properties</h2>
+          <h3>Check our <span>Featured Properties</span></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">1 BHK</li>
+              <li data-filter=".filter-card">2 BHK</li>
+              <li data-filter=".filter-web">3 BHK</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="./assets/img/portfolio/bhk-1.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 1</h4>
+              <p>1 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="./assets/img/portfolio/bhk-2.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 2</h4>
+              <p>3 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="./assets/img/portfolio/bhk-3.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 3</h4>
+              <p>1 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-3.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="./assets/img/portfolio/bhk-4.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 4</h4>
+              <p>2 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-4.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus loading=" lazy""></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="./assets/img/portfolio/bhk-5.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 5</h4>
+              <p>3 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-5.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="./assets/img/portfolio/bhk-6.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 6</h4>
+              <p>1 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-6.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="./assets/img/portfolio/bhk-7.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 7</h4>
+              <p>2 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-7.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus loading=" lazy""></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="./assets/img/portfolio/bhk-8.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 8</h4>
+              <p>2 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-8.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus loading=" lazy""></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="./assets/img/portfolio/bhk-9.jpeg" class="img-fluid features-img" alt="" loading="eager">
+            <div class="portfolio-info">
+              <h4>Property 9</h4>
+              <p>3 BHK</p>
+              <a href="./assets/img/portfolio/original-img/bhk-9.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus" loading="lazy"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- End Portfolio Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Can you find me a room?<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We're not an agency so we can't find properties for you. However, our Customer
+                Service team are on hand 7 days a week to help you get the most from Room-Rental
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Do you pre-check advertisers?<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                It wouldn't be practical (or possible) for us to check every advertiser on the site. We do, however,
+                take the safety of our users very seriously and we take several measures to prevent scammers from
+                advertising on SpareRoom or contacting other users.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">How do I get started? <i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                You can search and browse all ads on SpareRoom without an account, but you'll need to register – which
+                is free - to post an ad or contact other users.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question"> Do I need to pay anything? <i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Anyone can use Room-Rental completely free.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">How does the contact system work?<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                To contact any advertiser just click on 'Email advertiser' to send them a message. If they've provided
+                their number, click on 'Phone advertiser' to call. You'll find these in the contact box on the right of
+                their advert.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">How do i close my Account?<i
+                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Just call or email us and we'll do this for you. We can either deactivate the account (so you don't
+                receive any further contact from us until you're ready) or permanently close your account.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Team</span></h3>
+          <p>These are the people that make the magic happen.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anurag Jangid</h4>
+                <span>Front-end Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Atik Mansuri</h4>
+                <span>Front-end Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Harsh Parikh</h4>
+                <span>PHP/Back-end Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Abhijeet Singh</h4>
+                <span>Back-end Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3>Contact <span>Us</span></h3>
+          <p>Our team will be available anytime for your service.</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14732.09887976617!2d75.88411119678955!3d22.61555205736217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a7a0698a930c80f!2sChameli%20Devi%20Group%20of%20Institutions!5e0!3m2!1sen!2suk!4v1648878504904!5m2!1sen!2suk"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Boys Hostel,CDGI.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>atikmansur45@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 98272-17601</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Room-Rental</h3>
+            <p>
+              A108 Bhawarkuan Sqaure <br>
+              Indore, 452001<br>
+              MP India <br><br>
+              <strong>Phone:</strong> +91 9827217601<br>
+              <strong>Email:</strong> anuragjangid@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Room-Rental</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://www.twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.google-plus.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+
+.ul-nav {
+  text-align: center;
+}
+
+.nav-img {
+  height: 58px;
+  width: 66px;
+  margin: 3px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.nav-link {
+  font-size: 1.3rem;
+}
+
+/* Breadcrumb */
+
+.bd-link {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.bd-link.active {
+  color: blue;
+}
+
+#formation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+
+  height: 100vh;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+  background: white;
+
+  padding: 50px 30px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.containerr .title::before {
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: cyan;
+}
+
+.form-group .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.radio {
+  padding: 10px;
+}
+.user-details.opt {
+  padding: 10px;
+}
+.input-box {
+  width: 80%;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 700px) {
+  .input-box {
+    width: 60%;
+    padding: 2% 0;
+    line-height: 1.5;
+  }
+
+  #textar {
+    width: 60%;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><em>Hello</em></h1>
+
+
+
+
+    <script>
+
+        /* Inner HTML -   returns the entire innerHTML inside h1 tag that is we can also change html tags along with text of element. */
+
+        document.querySelector("h1").innerHTML; // returns <em>Hello</em>
+
+        // That's why when we don't use em in our changed content the Goodbye doesn't get italicised 
+
+        document.querySelector("h1").innerHTML = "<strong>Goodbye</strong>";
+
+        // when writing html in js the tags will be written in quotation too, otherwise compiler might mistake it for js code instead of HTMl 
+
+
+        /* Text Content - returns only the text content of html ignoring inside html tags (if any.) */
+
+        document.querySelector("h1").textContent;   //returns Goodbye only
+
+        document.querySelector("h1").textContent = "Hello";
+    </script>
+</body>
+
+</html>

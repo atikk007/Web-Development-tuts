@@ -1,0 +1,64 @@
+body {
+
+    background-color: #EAF6F6;
+
+}
+
+h3 {
+
+    color:#7CD1B8 ;
+
+}
+h1 {
+
+    color:#7CD1B8 ;
+
+} 
+
+
+/* Since the colors are repeating at multiple places, we can also just make a class or id to make them appear whereever we wish */
+
+.three, .four { 
+    color: #7CD1B8;
+   
+    
+}
+
+.five.six {
+
+    font-size: 25px;
+}
+
+/* 
+ What is the difference between dot and using commas between the classes?  
+
+
+ commas means OR and dot means AND. So, ".five.six"  means a element needs to have both classes in order to get the properties applied. Where as ".three, .four" means if it has atleast one of them then also the properties will be applied.
+
+*/
+
+#divid1 {
+
+    font-size: 20px;
+}
+
+hr { 
+    
+    border-color: grey;
+    border-style: none !important;
+    border-top-style: dotted !important;   
+/* in html and css the below most property have more preference since we follow top to bottom approach thats why do remember to keep top-style below none otherwise the dotted will get overwritten by none. */
+    border-width: 5px;
+    width: 5%;
+} 
+
+/* Since we have also put some inline style in hr tag and wkt inline style have more precedence over external css that's why either we can clear the inline css from hr or we can use 
+" !important " tag to tell browser that external styling should be preffered */
+
+img {
+
+    height: 240px;
+    width: 240px;
+
+}
+

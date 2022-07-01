@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+
+    <style>
+        /* if p is contained by any li which is contained by div */
+        /* 
+            div li p {
+             color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } 
+    
+    */
+
+        /* if p is right inside div then this CSS will be applied */
+        /* 
+             div > p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+         } 
+    
+    */
+
+        /* if p is right after div i.e p is the next sibling of div*/
+        /* 
+            div + p {
+            color: white;
+            background-color: rgb(238, 137, 137);
+        } 
+    
+    */
+
+        /* Applies for all h1 in html */
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Applies for p which is inside of div */
+        div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        /* Applie for class .p1 which is inside class .row only (any other element with class p1 wont be affected ) */
+
+        .row .p1 {
+
+            border: 2px solid blue;
+        }
+
+        /* Will be applied to both classes */
+        .row,
+        .p1 {
+
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p class="p1"> This is a paragraph</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p class="p1"> This is the third paragraph</p>
+</body>
+
+</html>

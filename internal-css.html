@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+<!-- 
+   Internal CSS : Another way to include CSS in HTML is to use an internal stylesheet. It contains CSS rules for the entire page. The <style> element contains a block of styling rules and is placed in the <head> element of HTML files. e.g.- if we use style for p element then it will be used for every p element in html -->
+
+    <style>
+        body {
+
+            background-color: pink;
+            font: size 25px larger;
+
+        }
+
+        h3 {
+
+            background-color: orange;
+
+        }
+
+        hr {
+            
+            /* background-color: none; */
+
+            border-color: grey;
+            border-style: none;
+            border-top-style: dotted;
+            /* height: 0px; */
+            border-width: 20px;
+            width: 10%;
+
+        }
+
+        img {
+
+            height: 360px;
+            width: 360px;
+
+        }
+        
+        p {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="20">
+        <tr>
+            <td>
+                <img src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_2x3.jpg"
+                    alt="cat-image">
+
+            </td>
+            <td>
+
+                <h3>Inline CSS example : </h3> <br>
+
+
+                <hr>
+
+                <p><em>In internal CSS we make a style tag inside head tag and make all the changes that we need in
+                        our html doc to that element. If we change hr then all hr element will get changed until
+                        obviously we use element id specifically but in those cases using inline css is better.</em>
+                </p>
+
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+

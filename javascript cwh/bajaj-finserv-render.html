@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering Bajaj's api</title>
+
+    <style>
+        .user {
+            display: flex;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .user ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Click on the button to Render User list!</h1>
+    </div>
+
+    <button id="btn1" class="btn">Fetch Users</button>
+
+    <br> <br>
+    <hr>
+
+    <div id="users"></div>
+    <script>
+
+        var button = document.getElementById('btn1');
+
+        button.addEventListener('click', getUserDetails);
+
+        function getUserDetails() {
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://crossorigin.me/https://hiring.bajajfinservhealth.in/api/renderMe', true);
+
+
+
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    // console.log("hello")
+                    // console.log(this.responseText);
+
+                    var users = JSON.parse(this.responseText);
+
+                    var output = " ";
+
+                    users.forEach((element, index) => {
+                        // console.log("Element", element);
+                        output += `
+                                <div class="user"> 
+                                    <img src = ${element.avatar_url} width = "70" height = "70" alt="null">
+                                    <ul>
+                                        <li> Login : ${element.login}</li>
+                                    <li> html url : ${element.url.html_url}</li>
+                                    <li> type : ${element.type}</li>
+                                    </ul>
+                                    </div>`;
+                    });
+                    document.getElementById('users').innerHTML = output;
+
+                }
+            }
+
+            xhr.send();
+
+        }
+
+
+
+    </script>
+</body>
+
+
+
+
+</html>

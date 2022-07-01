@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: whitesmoke;
+
+        }
+
+        body * {
+
+            font-weight: 900;
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.2;
+
+
+        }
+
+        /* background shorthand - 
+                background-color - anything or can leave empty
+                background-image - img url
+                background-repeat - no-repeat / repeat etc etc
+                background-position - x-axis , y-axis. or can also write right/left/center etc.
+                if we write only one value then other will be automatically taken as center.
+                so on righting center it'll be center for both axis 
+
+                background size - cover
+
+        */
+        .navigation {
+
+            display: flex;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+
+        }
+
+        section {
+
+            border: 2px solid red;
+            height: 344px;
+            margin: 10px 233px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        section p {
+
+            width: 600px;
+            text-align: center;
+            line-height: 2;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headbar">
+        <nav class="navbar">
+
+            <ul class="navigation">
+
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Contact</li>
+                <li class="list">Sphere</li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to the coding world!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quo fugit quia dolorum odio error
+            placeat cum facilis nihil! Obcaecati, minima cupiditate, tenetur tempora debitis libero voluptates
+            labore inventore facere minus quae ex aspernatur reiciendis sapiente illo totam. Officia distinctio quas
+            veniam veritatis, culpa voluptatum unde explicabo minus ad doloremque.</p>
+    </section>
+
+
+</body>
+
+</html>

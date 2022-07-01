@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch api Github</title>
+
+    <style>
+        .user {
+            display: flex;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .user ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Users</h1>
+    </div>
+
+    <button id="btn1" class="btn">Fetch Users</button>
+    <button id="btn2" class="btn">Post test</button>
+
+    <br> <br>
+    <hr>
+
+    <div id="users"></div>
+    <script>
+
+        var button = document.getElementById('btn1');
+
+        button.addEventListener('click', getUserDetails);
+
+        function getUserDetails() {
+
+            let url = "https://api.github.com/users";
+
+            fetch(url)
+                .then((response) => {
+                    console.log("inside response");
+
+                    return response.json();
+                    // console.log(response);
+                })
+                .then((data) => {
+                    console.log("inside data");
+
+                    console.log(data);
+                    var output = " ";
+
+                    // for (var i in users) {
+
+                    //     output += `
+                    //     <div class="user"> 
+                    //         <img src = "${data[i].avatar_url}" width = "70" height = "70">
+                    //         <ul>
+                    //         <li> ID : ${data[i].id}</li>
+                    //         <li> Login : ${data[i].login}</li>
+                    //         </ul>
+                    //         </div>`;
+                    // }
+
+                    // document.getElementById('users').innerHTML = output;
+                })
+
+        }
+        console.log("outside")
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        .box {
+
+            height: 100px;
+            width: 100px;
+            background-color: indianred;
+            animation-name: boxanime;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            position: relative;
+        }
+
+        @keyframes boxanime {
+
+            0% {
+
+                left: 0px;
+                top: 0px;
+                background-color: indigo;
+
+            }
+
+            25% {
+                background-color: transparent;
+                left: 200px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 50px solid transparent;
+
+                border-bottom: 50px solid black;
+
+
+            }
+
+
+            50% {
+
+                left: 200px;
+                top: 200px;
+                background-color: lightgray;
+
+            }
+
+
+            75% {
+
+                left: 0px;
+                top: 200px;
+                background-color: cyan;
+
+            }
+
+            100% {
+
+                left: 0;
+                top: 0;
+                background-color: indianred;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="div1"></div>
+
+</body>
+
+</html>

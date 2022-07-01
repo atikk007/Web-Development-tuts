@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /* the rest will be kept as auto if unspecified (we can also use grid-auto-row/col to decide the value of our auto at once)
+            /* grid-auto-columns: 100px; Now 100px will be used at every unspecified value.*/
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            /* grid-template-columns: repeat(3, auto); */
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 2rem;
+            gap: 3rem;
+
+            /* Gap and Grid gap both are exactly same. Used to set gap b/w grid row and column. Tho gap is newer so avoid using grid-gap. */
+
+            /* grid-template-rows: 1400px 124px 569px; rest auto */
+            grid-template-rows: repeat(5, 500px);
+        }
+
+
+        .item {
+            /* height: 100px;
+        width: 100px; */
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <!-- <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div> -->
+    </div>
+    <!--  div.container{Hello there-$}*10 -->
+</body>
+
+</html>

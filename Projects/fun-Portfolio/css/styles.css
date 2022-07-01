@@ -1,0 +1,237 @@
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+/* position : relative since our child element is absolute and if nearest element to it isn't realtive then it will style with keeping body as relative */
+body {
+  margin: 0; /* while writing 0 px or em or % doesn't matter since 0 is 0 */
+  text-align: center;
+}
+
+h1 {
+  color: #66bfbf;
+  margin-top: 0;
+  font-family: "Cinzel", serif;
+}
+
+/* if we had width of any attribute for example -
+
+Then even after using text center you would see that the h1 hasn't been centered. This is because width changes the relative positions so the way to solve this is either hit and try and set margin as center in px or we can just use margin : 'auto' for both horizontal or vertical whichever we wish to use.
+
+h1 {
+     
+    width : 50%;
+    margin : 0 auto 0 auto;
+
+  where, margin : top right bottom left;
+
+}    auto will automatically center the two for us.
+
+*/
+
+h2 {
+  color: #66bfbf;
+}
+
+h3 {
+  color: #11999e;
+}
+
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+#skill-p,
+#meme-p {
+  font-family: "Martel", cursive, serif;
+}
+
+.intro {
+  font-size: 1.2rem;
+  width: 40%;
+  margin: auto;
+  line-height: 1.5;
+}
+.under {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 31.25rem;
+  bottom: 18.75rem;
+}
+/* em,rem, % changes size when zoom level is changed from browser setting. While px remains the same. em, rem and % are dynamic size. Em and % are relative to parent element size that is if In parent element 'div' font-size is 4em or 100% and in its child element 'h1' font-size is 1 em or 50% then child element will have actual font size of (1+4)em or (100+50)%. While px or rem (root em-same as em just that it doesn't inherit parent size) are not relative to parent element.*/
+.top-cloud {
+  position: absolute;
+  right: 31.25rem;
+  top: 3.125rem;
+}
+
+.pcl {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Zilla Slab", serif;
+  font-size: 150%;
+  color: #66bfbf;
+}
+
+.skillimg {
+  width: 160px;
+  height: 160px;
+  float: left;
+  margin-right: 30px;
+}
+
+.memeskill {
+  width: 150px;
+  height: 140px;
+  float: right;
+  margin-right: 17px;
+}
+
+.manimg {
+  width: 128px;
+  height: 128px;
+  margin-top: 50px;
+}
+
+#hr1 {
+  margin: 0px;
+}
+
+.skill-row {
+  margin: 100px auto;
+  width: 40%; /* Reduced the width of the div to make my para to go on another line
+/*                    and had to change margin to auto (center) because now div is 50% and the original place of the content will be changed */
+  /* line-height: 2; */
+
+  text-align: left;
+}
+
+hr {
+  color: grey;
+  width: 5%;
+  border-width: 8px;
+  border-style: none;
+  border-top-style: dotted;
+  margin: 76px auto;
+  /* height: 30px; */
+}
+
+.contact-me {
+  margin-top: 50px;
+  line-height: 2;
+  width: 40%;
+  margin: auto;
+  font-family: "Martel", cursive, serif;
+  font-weight: normal;
+}
+
+#cont-p {
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+/* even after using important */
+
+#gettouchid {
+  font-size: 2rem;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 100px;
+  margin: 100px 0 0;
+  color: #eaf6f6;
+}
+
+.footer-link {
+  color: #11999e;
+  text-decoration: none;
+  padding: 50px;
+  margin-bottom: 100px;
+  font-size: x-large;
+}
+
+.footer-link:hover {
+  color: #eaf6f6;
+}
+
+/* CSS */
+.btn {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+/* .btn {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 9px;
+    line-height: 9px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    width: 175px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 32px;
+    background-color: #11999E;
+    -webkit-box-shadow: inset 1px 1px 20px 0 #11999E;
+    -moz-box-shadow: inset 1px 1px 20px 0 #11999E;
+    box-shadow: inset 1px 1px 20px 0 #11999E;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn:hover {
+    border: solid #337FED 1px;
+    background: #00e3eb;
+    background-image: -webkit-linear-gradient(top, #00e3eb, #00e3eb);
+    background-image: -moz-linear-gradient(top, #00e3eb, #00e3eb);
+    background-image: -ms-linear-gradient(top, #00e3eb, #00e3eb);
+    background-image: -o-linear-gradient(top, #00e3eb, #00e3eb);
+    background-image: -webkit-gradient(to bottom, #00e3eb, #00e3eb);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ } */
